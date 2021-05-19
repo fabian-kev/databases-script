@@ -1,0 +1,7 @@
+Github link
+https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance
+
+
+to build an image
+
+./buildContainerImage.sh -v 18.4.0 -t oracle-18c -x

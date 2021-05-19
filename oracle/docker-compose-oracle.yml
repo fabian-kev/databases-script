@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  oracledb:
+    image: oracle-18c 
+    container_name: oracle-18.4c
+    ports:
+      - '1521:1521'
+      - '55500:5500'
+    volumes:
+      - oracle_18c_volume:/opt/oracle/oradata
+    environment:
+      - ORACLE_PASSWORD=admin
+      - ORACLE_CHARACTERSET=AL32UTF8
+    networks:
+      - oracle_network
+
+networks:
+  oracle_network: {}
+volumes:
+    oracle_18c_volume: {}
