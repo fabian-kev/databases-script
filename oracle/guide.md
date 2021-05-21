@@ -2,11 +2,6 @@ Github link
 https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance
 
 
-
-if you are getting TNS or listener error
-search listener.ora to fix
-
-
 Steps to build oracle image
 
 1. https://github.com/oracle/docker-images.git
