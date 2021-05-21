@@ -12,3 +12,8 @@ sqlplus sys@XEPDB1 as sysdba
 -- Create a user
 CREATE USER qwert123 IDENTIFIED BY qwert123;
 GRANT ALL PRIVILEGES TO qwert123;
+
+
+--Build an image
+go to 
+./buildContainerImage.sh -v 18.4.0 -t oracle-18c -x
